@@ -1,13 +1,39 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hi, we are Leeroy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hi, we are Leeroy</title>
 </head>
 <body>
-  <ul id="list"></ul>
-  <script src="script.js"></script>
+    <ul id="list"></ul>
+
+    <label>Company Locations:</label>
+    <div class="multiple_select_checkbox">
+        <div id="multiple_select_checkbox_choice"><input type="checkbox" name="company" value="Seatle: Amazon" />Seattle</div>
+        <div id="multiple_select_checkbox_choice"><input type="checkbox" name="company" value="Cupertino: Apple" />Cupertino</div>
+        <div id="multiple_select_checkbox_choice"><input type="checkbox" name="company" value="Menlo Park: Facebook" />Menlo Park</div>
+        <div id="multiple_select_checkbox_choice"><input type="checkbox" name="company" value="Mountain View: Google" />Mountain View</div>
+        <div id="multiple_select_checkbox_choice"><input type="checkbox" name="company" value="Sundsvall: Leeroy" />Sundsvall</div>
+        <div id="multiple_select_checkbox_choice"><input type="checkbox" name="company" value="Palo Alto: Tesla" />Palo Alto</div>
+    </div>
+
+    <br />
+    <button id="btnFilter">Submit</button>
+    <ul id="myDiv"></ul>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+<style>
+    div.multiple_select_checkbox {
+        width: 150px;
+        height: 60px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: 1px solid #CCCCCC;
+    }
+</style>
