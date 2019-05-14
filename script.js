@@ -8,5 +8,10 @@
     {id: 5, name: 'Leeroy', location: 'Sundsvall'},
     {id: 6, name: 'Tesla', location: 'Palo Alto'}
   ]
-
+    //Exercise 1
+    for (var i = 0; i < companies.length; i++) {
+        var li = document.createElement("li")
+        li.innerHTML = "Company Name: " + companies[i].name + "," + " Company Location: " + companies[i].location;
+        document.getElementById("list").appendChild(li);
+    }
 })()
