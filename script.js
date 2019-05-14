@@ -14,4 +14,15 @@
         li.innerHTML = "Company Name: " + companies[i].name + "," + " Company Location: " + companies[i].location;
         document.getElementById("list").appendChild(li);
     }
+
+    //Exercise 2
+    var list1 = document.getElementById("list").getElementsByTagName('li');
+
+    for (var i = 0; i < list1.length; i++) {
+        list1[i].addEventListener('click', showCompany);
+    }
+
+    function showCompany() {
+        console.log(this.innerHTML + " is clicked!");
+    }
 })()
