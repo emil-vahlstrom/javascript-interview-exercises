@@ -1,0 +1,69 @@
+body {
+    font-family: Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+}
+
+#list {
+    /* border: 1px solid #CCCCCC;*/
+}
+
+.header-column {
+    border-bottom: 1px solid #CCC;
+    text-align: center;
+    color: #444;
+}
+
+.header {
+    margin: 0em;
+}
+
+.column-width-half, .column-width-full {
+    /* border: 1px solid #CCCCCC; */
+    padding: 0.5em;
+    margin-top: 0;
+    box-sizing: border-box;
+    border-right: 1px solid #CCC;
+    margin-right: -1px;
+    border-radius: 7px;
+    flex: 1 1 auto;
+}
+
+.column-width-half {
+    width: 50%;
+}
+
+.column-width-full {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 7px 0px rgba(0, 0, 0, 1) inset;
+    border-radius: 7px;
+}
+
+div.multiple_select_checkbox {
+    width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* border: 1px solid #CCC;
+        border-radius: 7px; */
+}
+
+.multiple_select_checkbox_choice {
+    background: #FFF;
+    transition: background linear 0.3s;
+}
+
+    .multiple_select_checkbox_choice:hover {
+        background: #CCC;
+    }
+
+.selectAll {
+    border-bottom: 1px solid #CCC;
+}
